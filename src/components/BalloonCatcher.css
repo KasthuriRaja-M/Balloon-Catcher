@@ -24,10 +24,26 @@
 .menu h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  background: linear-gradient(45deg, #667eea, #764ba2);
+  background: linear-gradient(45deg, #ff6b6b, #ffd93d, #6bcf7f, #4d9de0, #e15759);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  animation: titleGlow 3s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px rgba(255, 107, 107, 0.5));
+  }
+  25% {
+    filter: drop-shadow(0 0 15px rgba(255, 217, 61, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 20px rgba(107, 207, 127, 0.5));
+  }
+  75% {
+    filter: drop-shadow(0 0 15px rgba(77, 157, 224, 0.5));
+  }
 }
 
 .menu p {
